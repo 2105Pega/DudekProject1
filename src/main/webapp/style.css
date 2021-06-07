@@ -1,0 +1,384 @@
+/* added this to avoid horizontal overflow */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+/*  */
+
+h2 {
+	color: rgb(3, 3, 49);
+}
+
+.page-container {
+	position: relative;
+	min-height: 100vh;
+
+}
+
+.content-wrap {
+	padding-bottom: 2.5rem;
+}
+
+.sticky-footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	/* height: 2.5rem; */
+	height: 10vh;
+	/* padding: 10px;   */
+	text-align: center;
+	background-color: white;
+}
+
+.stickyText {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.page-header {
+	text-align: center;
+	text-align: center;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.btnMain {
+	width: 200px;
+	padding: 5px;
+	/* border: solid 3px white; */
+	box-shadow: 10px 10px 8px #3f3d3dd0;
+	margin: 1em, 0px;
+	border-radius: 15px;
+	background-color: #0353a477;
+	border: none;
+}
+
+.btnMain:hover {
+	background-color: #0353a4;
+}
+
+.menu {
+	/* margin-top: 30vh; */
+	/* margin-top: 200px; */
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+
+.btn-group-vertical {
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+}
+
+#username, #password {
+	text-align: center;
+}
+
+.ctrForm {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+.hide {
+	display: none;
+}
+
+.loginForm {
+	margin-top: 30vh;
+}
+
+.start {
+	text-align: center;
+	/* margin-top: 30vh; */
+}
+
+#regLink {
+	text-decoration: none;
+	color: white;
+}
+
+.container2 {
+	/* border: 2px solid rgba(119, 119, 119, 0.747); */
+	min-height: 80vh;
+	box-shadow: 10px 10px 8px #3f3d3dd0;
+	border-radius: 25px;
+	background-color:rgba(255, 255, 255, 0.596);
+}
+
+.content-wrap {
+	margin: 0px 5em;
+}
+
+.uMenu2 {
+	/* margin-left: 1em; */
+	margin: auto;
+	/* border-radius: 25px; */
+
+}
+
+.userNav {
+	background-color: #023E7D;
+	width: 100vw;
+	height: 7vh;
+}
+.nav {
+	width: 100vw;
+}
+
+.userNav a {
+	text-decoration: none;
+	color: white;
+}
+
+#userCard {
+	/* background-color: lightblue; */
+}
+
+#userTable, #adminTable {
+	/* border: gray 1px solid; */
+	margin: auto;
+	/* border-radius: 15px; */
+	box-shadow: 10px 10px 8px #3f3d3dd0;
+}
+
+#userTable th, #adminTable th {
+	min-width: 100px;
+}
+
+/* .tHeader {
+	width: 100px;
+} */
+
+
+/* 1 CSS animated background */
+
+/* html {
+	height:100%;
+  }
+  
+  body {
+	margin:0;
+  } */
+
+.bg {
+  animation:slide 5s ease-in-out infinite alternate;
+  background-image: linear-gradient(-90deg, #0353A4 50%, #7D8597 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:6s;
+}
+
+.bg3 {
+  animation-duration:7s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+
+/* Second CSS pattern */
+/* .bg-animated-blue2{
+    background-color: #0770ac;
+    background: -webkit-linear-gradient(24deg, #979DAC, #023E7D, #0466C8);
+    background: -moz-linear-gradient(24deg, #979DAC, #023E7D, #0466C8);
+    background: linear-gradient(24deg, #979DAC, #023E7D, #0466C8);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 9s ease infinite;
+    -moz-animation: AnimationName 9s ease infinite;
+    animation: AnimationName 9s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 50%}
+} */
+
+
+.hiddenBackground{
+	display: none;
+}
+
+.showBackground{
+	text-align: center;
+}
+
+.white{
+	background-color: white;
+	height: 10vh;
+}
+
+.center{
+	margin: auto;
+	text-align: center;
+}
+
+input{
+	margin-top: 0.5em;
+}
+
+.userBckg {
+	/* background-color:#7D8597; */
+	background-color:#7D8597;
+}
+
+
+
+.uMenu {
+	width: 200px;
+	padding: 5px;
+	border: none;
+	/* border: solid 3px white; */
+	box-shadow: 10px 10px 8px #3f3d3dd0;
+	margin: 1em, 0px;
+	border-radius: 15px;
+	background-color: #0353a4;
+}
+
+
+li {
+	padding-left: 5em;
+	padding-right: 5em;
+} 
+
+ul {
+	/* margin-top: 30vh; */
+	/* margin-top: 200px; */
+	text-align: center;
+	position: relative;
+	top: 50%;
+	
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.userColor {
+	background-color:#023E7D;
+	color: white;
+	height: 5vh !important;
+}
+
+.btnUser {
+	width: 200px;
+	padding: 5px;
+	/* border: solid 3px white; */
+	box-shadow: 10px 10px 8px #3f3d3dd0;
+	/* margin: 1em, 0px; */
+	margin-top: 1.5em;
+	border-radius: 15px;
+	background-color: #0353a48a;
+	border: none;
+}
+
+.btnUser:hover {
+	background-color: #0353a4;
+}
+
+
+/* Admin CSS for menu panel */
+.adminMenuContainer {
+	/* margin-left: 1em; */
+	margin: auto;
+	/* border-radius: 25px; */
+	width: 275px;
+
+}
+
+.adminMenu {
+	/* width: 300px; */
+	padding: 0.75em;
+	border: none;
+	/* border: solid 3px white; */
+	box-shadow: 10px 10px 8px #3f3d3dd0;
+	margin: 1em, 0px;
+	border-radius: 15px;
+	background-color: #006466;
+}
+
+#adminCard {
+	/* border: 2px solid rgba(119, 119, 119, 0.747); */
+	min-height: 80vh;
+	box-shadow: 10px 10px 8px #3f3d3dd0;
+	border-radius: 25px;
+	background-color:rgba(255, 255, 255, 0.596);
+	margin: 2em 0;
+}
+
+/* p{
+	background-color: #becef3;
+} */
+
+#welcomeMsg{
+	margin-top: 30vh;
+}
+
+.adminNav {
+	background-color: #144552;
+	width: 100vw;
+	height: 7vh;
+}
+
+.adminColor {
+	background-color:#144552;
+	color: white;
+	height: 5vh !important;
+}
+
+.btnAdmin {
+	width: 200px;
+	padding: 5px;
+	/* border: solid 3px white; */
+	box-shadow: 10px 10px 8px #3f3d3dd0;
+	/* margin: 1em, 0px; */
+	margin-top: 1.5em;
+	border-radius: 15px;
+	background-color: #1445528a;
+	border: none;
+}
+
+.btnAdmin:hover {
+	background-color: #144552;
+}
+
+
+/* button{
+	border: none;
+} */
