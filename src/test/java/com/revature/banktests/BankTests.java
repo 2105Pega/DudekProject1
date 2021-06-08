@@ -88,6 +88,29 @@ class BankTests {
 	
 	
 	
+	
+	
+	
+	// Connection Test
+	@Test
+	public void connectionTest()
+	{
+		try {
+			Connection connection = ConnectionUtils.getConnection();
+			
+			assertEquals(connection.isValid(0), true);
+			assertEquals(connection.getSchema(), "public");
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+
+	
 	//tests for UserService
 //	@Test
 //	void showAllUsers() {
@@ -119,23 +142,6 @@ class BankTests {
 //		
 //		
 //	}
-	@Test
-	public void connectionTest()
-	{
-		try {
-			Connection connection = ConnectionUtils.getConnection();
-			
-			assertEquals(connection.isValid(0), true);
-			assertEquals(connection.getSchema(), "public");
-			
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-		
-		
-		
-		
-	}
 
 	
 	

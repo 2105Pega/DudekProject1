@@ -305,20 +305,26 @@ function depositAccount() {
 
     let accMoney = document.querySelector("#accMoney").value;
     let accNum = document.querySelector("#accNum").value;
+    
 
-    if (accMoney <= 0 || isNaN(accMoney)) {
-        document.querySelector("#accNum").value ="";
-        document.querySelector("#accMoney").value ="";
+    
+
+    if (accMoney <= 0) {
+        //document.querySelector("#accNum").value ="";
+        //document.querySelector("#accMoney").value ="";
         alert("Please enter a positive number.");
+       //return;
     }
 
     if (isNaN(accNum)) {
-        document.querySelector("#accNum").value ="";
-        document.querySelector("#accMoney").value ="";
+        //document.querySelector("#accNum").value ="";
+        //document.querySelector("#accMoney").value ="";
         alert("Please enter a valid account number.");
+        return;
     }
 
-    else {
+
+        if(accMoney > 0) {
 
         let url = `http://localhost:8080/JerseyJDBCBank/api/controller/users/${accMoney}/${accNum}`;
 
@@ -339,6 +345,7 @@ function depositAccount() {
         request.open("PUT", url);
         request.send();
     } 
+
 }
 
 
