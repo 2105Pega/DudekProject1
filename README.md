@@ -1,9 +1,10 @@
 
-# 🤑 JDBC Bank :chart_with_upwards_trend:
+# JDBC Bank :chart_with_upwards_trend:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-__JDBC Bank__ is a console banking application built in Java. The app was designed for people who want to have quick access to their banking accounts on many different devices. JDBC Bank users can log in, open new checking or savings accounts, and make multiple withdrawals or deposits in a session!
+__JDBC Bank__ is a banking application built in Java with a front-end interface designed in HTML, CSS, and JavaScript. The app was designed for people who want to have quick access to their banking accounts on many different devices. JDBC Bank users can log in, open new checking or savings accounts, and make multiple withdrawals or deposits in one session.
+Bank Admin can log in to view personal information of all users as well as account balances. In addition, Admin can approve and deny pending account applications.
 
 ## Table of Contents
 * [Installation](#Installation)
@@ -16,27 +17,17 @@ __JDBC Bank__ is a console banking application built in Java. The app was design
 
 ## Installation
 
-1. You can download the app from this github repository and run the JDBCBank.sql file to create tables in SQL.
-2. Properties file contains necessary passwords to use the app.
-3. After downloading the app, you can run it as Java application in Spring Tool Suite.
+1. You can download the app from this github repository and run the JDBCBank.sql file to create appropriate tables in SQL.
+2. After downloading the app, you can create a Tomcat Server and run the app on the local server.
+3. Paste the localhost URL address into your web browser to use the app.
 
 
 
 
 ## Usage
-To use the app you can login as an admin or as a user:
+To use the app you can login as an admin or as a user with the following credentials:
 1. Admin: username - admin1, password - pass1
 2. User: username - Peter123, password - 123
-
-
-<p align="center">
-<img src="./src/main/resources/screen1.png"/>
-</p>
-
-
-<p align="center">
-<img src="./src/main/resources/screen2.png"/>
-</p>
 
 
 ## Tech_Stack!
@@ -46,14 +37,20 @@ This app was created with the following programming languages, software, and tec
 - AWS RDS
 - DBeaver
 - JDBC
+- Servlets
+- Jersey API
 - Maven
 - PostgreSQL
-- Log4J
-- JUnit
+- Log4J2
+- JUnit5
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
 
 __Extra features that I implemented:__
-1. Highly secure login
-2. Unique usernames
+1. Highly secure login authentication
+2. Validation to ensure unique usernames
 3. Overdraft protection
 4. Friendly UI
 5. And more...
@@ -66,7 +63,7 @@ This application is covered under the MIT license.
 If you would like to work on this project with me, reach out using the contact info below.
 
 ## Test
-JUnit tests were done on all user defined Java methods
+JUnit5: Every Java class has at least one unit test.
 
 ## Questions
 If you have additional questions, you can reach me via my GitHub profile: [peterdudek](https://github.com/peterdudek)<br/>
