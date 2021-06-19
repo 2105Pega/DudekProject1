@@ -48,7 +48,7 @@ This app was created with the following programming languages, software, and tec
 - JavaScript
 - Bootstrap
 
-__Extra features that I implemented:__
+__Extra features:__
 1. Highly secure login authentication
 2. Validation to ensure unique usernames
 3. Overdraft protection
